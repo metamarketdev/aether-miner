@@ -1,6 +1,5 @@
-"# aether-miner" <br />
-###Aether ERC20 Token Miner<br />
-###Solves proof of work to mine supported ERC20 tokens.<br />
+### Aether ERC20 Token Miner<br />
+### Solves proof of work to mine supported ERC20 tokens.<br />
 
 Commands :
 "account new"            - Create a new account and local keystore (.0xbitcoin)<br />
@@ -23,7 +22,7 @@ Commands :
 "mine"                   - Begin solo mining using CPU<br />
 "mine cuda"              - Begin solo mining using CUDA GPU<br />
 
-###Official Releases Downloads<br />
+### Official Releases Downloads<br />
 https://github.com/snappyswap/aether-miner/releases<br />
 
 ### Getting Started
