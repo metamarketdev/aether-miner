@@ -1,6 +1,6 @@
-"# aether-miner" 
-Aether ERC20 Token Miner<br />
-Solves proof of work to mine supported ERC20 tokens.<br />
+"# aether-miner" <br />
+##Aether ERC20 Token Miner<br />
+##Solves proof of work to mine supported ERC20 tokens.<br />
 
 Commands :
 "account new"            - Create a new account and local keystore (.0xbitcoin)<br />
@@ -23,5 +23,32 @@ Commands :
 "mine"                   - Begin solo mining using CPU<br />
 "mine cuda"              - Begin solo mining using CUDA GPU<br />
 
-Official Releases Downloads<br />
+##Official Releases Downloads<br />
 https://github.com/snappyswap/aether-miner/releases<br />
+
+### Getting Started
+1. Build a new mining account with 'account new'
+2. View the private key with 'account list'
+3. Write down these credentials
+4. Select the contract you want with 'contract select 0x###'
+5. Mine tokens with the command 'mine'
+
+Note that IF SOLO MINING it is necessary to fill the mining account (if it is on the Ethereum network) with a small amount of ether.  Typically 0.005 eth is good enough to get started.  The ether is used for gas to make function calls to the token smart contract when your miner finds a solution to the Proof of Work.  When the gas is spent that means that you have found a solution! If you were the first to find it, you will be rewarded with the block reward.  (See the block explorer for typical gas prices at the current moment.)
+
+
+
+### Pool Mining
+- You can mine into a pool with the command 'pool mine'  
+- When mining into a pool, your gasprice does not matter and you will pay NO GAS FEES  
+- Every pool is different so consult each pool owner.  Typically, pools will offer a token withdraw mechanism or automatically send tokens to your address on a periodic basis or when a limit is reached
+
+
+
+### Vault Datafiles
+
+(requires 'show hidden files and folders')
+
+Stored at:
+
+- Windows
+    '/Users/{user}/Appdata/Roaming/.0xbitcoin'
