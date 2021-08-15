@@ -1,0 +1,709 @@
+typedef char __nv_bool;
+#line 523 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.17763.0\\ucrt\\corecrt.h"
+struct __crt_locale_pointers;
+#line 2763 "e:\\cuda\\include\\driver_types.h"
+struct CUstream_st;
+#line 25 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.17763.0\\ucrt\\corecrt_wstdio.h"
+struct _iobuf;
+#line 149 "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Tools\\MSVC\\14.16.27023\\include\\vadefs.h"
+struct _Z39__vcrt_assert_va_start_is_not_referenceIKPKcE;
+#line 29 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.17763.0\\ucrt\\sys/timeb.h"
+struct __timeb64;
+#line 38 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.17763.0\\ucrt\\sys/timeb.h"
+struct timeb;
+#line 180 "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Tools\\MSVC\\14.16.27023\\include\\vcruntime.h"
+typedef unsigned long long size_t;
+#include "crt/device_runtime.h"
+#line 39 "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Tools\\MSVC\\14.16.27023\\include\\vadefs.h"
+typedef char *va_list;
+#line 514 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.17763.0\\ucrt\\corecrt.h"
+typedef long long __time64_t;
+#line 529 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.17763.0\\ucrt\\corecrt.h"
+typedef struct __crt_locale_pointers *_locale_t;
+#line 551 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.17763.0\\ucrt\\corecrt.h"
+typedef __time64_t time_t;
+#line 28 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.17763.0\\ucrt\\corecrt_wstdio.h"
+typedef struct _iobuf FILE;
+#pragma pack(8)
+#line 149 "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Tools\\MSVC\\14.16.27023\\include\\vadefs.h"
+struct _Z39__vcrt_assert_va_start_is_not_referenceIKPKcE {char __nv_no_debug_dummy_end_padding_0;};
+#pragma pack()
+#line 17 "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Tools\\MSVC\\14.16.27023\\include\\stdint.h"
+typedef signed char int8_t;
+#line 19 "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Tools\\MSVC\\14.16.27023\\include\\stdint.h"
+typedef int int32_t;
+#line 21 "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Tools\\MSVC\\14.16.27023\\include\\stdint.h"
+typedef unsigned char uint8_t;
+#line 23 "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Tools\\MSVC\\14.16.27023\\include\\stdint.h"
+typedef unsigned uint32_t;
+#line 24 "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Tools\\MSVC\\14.16.27023\\include\\stdint.h"
+typedef unsigned long long uint64_t;
+#pragma pack(8)
+#line 38 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.17763.0\\ucrt\\sys/timeb.h"
+struct timeb {
+#line 40 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.17763.0\\ucrt\\sys/timeb.h"
+time_t time;
+#line 41 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.17763.0\\ucrt\\sys/timeb.h"
+unsigned short millitm;
+#line 42 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.17763.0\\ucrt\\sys/timeb.h"
+short timezone;
+#line 43 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.17763.0\\ucrt\\sys/timeb.h"
+short dstflag;char __nv_no_debug_dummy_end_padding_0[2];};
+#pragma pack()
+#line 70 "e:\\cuda\\include\\cuda_device_runtime_api.h"
+___device__(static  __no_sc__) enum cudaError cudaMalloc(void **, size_t);
+#line 126 "e:\\cuda\\include\\cuda_device_runtime_api.h"
+___device__(extern  __no_sc__) enum cudaError cudaGetDeviceCount(int *);
+#line 139 "e:\\cuda\\include\\cuda_device_runtime_api.h"
+___device__(extern  __no_sc__) enum cudaError cudaFree(void *);
+#if !defined(__CUDABE__)
+#line 40 "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Tools\\MSVC\\14.16.27023\\include\\vcruntime_string.h"
+ __device_builtin__ ___device__(extern  __no_sc__) void *memcpy(void *, const void *, size_t);
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#line 948 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.17763.0\\ucrt\\stdio.h"
+ __device_builtin__ ___device__(extern  __no_sc__) int printf(const char *const, ...);
+#endif
+#line 3295 "e:\\cuda\\include\\crt/device_functions.h"
+___device__(extern  __no_sc__) unsigned __cudaPushCallConfiguration(struct dim3, struct dim3, size_t, struct CUstream_st *);
+#line 68 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+___device__(static  __no_sc__) __forceinline__ uint64_t _Z8bswap_64y(uint64_t);
+#line 82 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+___device__(static  __no_sc__) __forceinline__ uint64_t _Z9ROTL64asmyj(uint64_t, uint32_t);
+#line 97 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+___device__(static  __no_sc__) __forceinline__ uint64_t _Z9ROTR64asmyj(uint64_t, uint32_t);
+#line 111 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+___device__(static  __no_sc__) __forceinline__ uint64_t _Z4xor5yyyyy(uint64_t, uint64_t, uint64_t, uint64_t, uint64_t);
+#line 122 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+___device__(static  __no_sc__) __forceinline__ uint64_t _Z10ROTLfrom32yj(uint64_t, uint32_t);
+#line 138 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+___device__(static  __no_sc__) __forceinline__ uint64_t _Z10ROTRfrom32yj(uint64_t, uint32_t);
+#line 153 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+___device__(static  __no_sc__) __forceinline__ uint64_t _Z8ROTLby16y(uint64_t);
+#line 167 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+___device__(static  __no_sc__) __forceinline__ uint64_t _Z7ROTLby8y(uint64_t);
+#line 181 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+___device__(static  __no_sc__) __forceinline__ uint64_t _Z7ROTRby8y(uint64_t);
+#line 197 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+___device__(static  __no_sc__) __forceinline__ uint64_t _Z7ROTLby1y(uint64_t);
+#line 211 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+___device__(static  __no_sc__) __forceinline__ uint64_t _Z7ROTRby1y(uint64_t);
+#line 224 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+___device__(static  __no_sc__) __forceinline__ uint64_t _Z4xor3yyy(uint64_t, uint64_t, uint64_t);
+#line 236 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+___device__(static  __no_sc__) __forceinline__ uint64_t _Z9lop3_0xD2yyy(uint64_t, uint64_t, uint64_t);
+#line 256 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+___device__(static  __no_sc__) __nv_bool _Z6keccakyjPyPb(uint64_t, uint32_t, uint64_t *, __nv_bool *);
+#line 459 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__launch_bounds__(1024U,1) __global__ __var_used__ extern void _Z8gpu_minePyy(uint64_t *, uint64_t);
+#line 427 "e:\\cuda\\include\\vector_types.h"
+___device__(static  __no_sc__) void _ZN4dim3C1Ejjj(struct dim3 *const, unsigned, unsigned, unsigned);
+___device__(static  __no_sc__) void _ZN4dim3C2Ejjj(struct dim3 *const, unsigned, unsigned, unsigned);
+#line 62 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+static  __constant__  __var_used__ uint64_t d_mid[25];
+#line 63 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+static  __constant__  __var_used__ uint64_t d_target;
+#line 64 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+static  __constant__  __var_used__ uint32_t threads;
+#line 65 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+static  __constant__  __var_used__ __nv_bool d_HBoptimizations[8];
+#include "common_functions.h"
+#line 70 "e:\\cuda\\include\\cuda_device_runtime_api.h"
+___device__(static  __no_sc__) __inline__ enum cudaError cudaMalloc(
+#line 70 "e:\\cuda\\include\\cuda_device_runtime_api.h"
+void **p, 
+#line 70 "e:\\cuda\\include\\cuda_device_runtime_api.h"
+size_t s){
+#line 71 "e:\\cuda\\include\\cuda_device_runtime_api.h"
+{
+#line 72 "e:\\cuda\\include\\cuda_device_runtime_api.h"
+return cudaErrorUnknown;
+#line 73 "e:\\cuda\\include\\cuda_device_runtime_api.h"
+}}
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#line 68 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+___device__(static  __no_sc__) __forceinline__ uint64_t _Z8bswap_64y(
+#line 68 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint64_t input){
+#line 69 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+{
+#line 70 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__asm("{  .reg .u32 oh, ol;  mov.b64 {oh,ol}, %0;  prmt.b32 oh, oh, 0, 0x0123;  prmt.b32 ol, ol, 0, 0x0123;  mov.b64 %0, {ol,oh};}" : "+l" (input) :);
+#line 77 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+return input;
+#line 78 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+}}
+#line 82 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+___device__(static  __no_sc__) __forceinline__ uint64_t _Z9ROTL64asmyj(
+#line 82 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint64_t input, 
+#line 82 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint32_t magnitude){
+#line 83 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+{
+#line 84 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__asm("{.reg .b32 hi, lo, mag, scr;mov.b32 mag, %1;mov.b64 {hi,lo}, %0;shf.l.wrap.b32 scr, lo, hi, mag;shf.l.wrap.b32 lo, hi, lo, mag;m" "ov.b64 %0, {scr,lo};}" : "+l" (input) : "r" (magnitude));
+#line 92 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+return input;
+#line 93 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+}}
+#line 97 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+___device__(static  __no_sc__) __forceinline__ uint64_t _Z9ROTR64asmyj(
+#line 97 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint64_t input, 
+#line 97 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint32_t magnitude){
+#line 98 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+{
+#line 99 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__asm("{.reg .b32 hi, lo, mag, scr;mov.b32 mag, %1;mov.b64 {hi,lo}, %0;shf.r.wrap.b32 scr, hi, lo, mag;shf.r.wrap.b32 lo, lo, hi, mag;m" "ov.b64 %0, {scr,lo};}" : "+l" (input) : "r" (magnitude));
+#line 107 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+return input;
+#line 108 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+}}
+#line 111 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+___device__(static  __no_sc__) __forceinline__ uint64_t _Z4xor5yyyyy(
+#line 111 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint64_t a, 
+#line 111 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint64_t b, 
+#line 111 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint64_t c, 
+#line 111 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint64_t d, 
+#line 111 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint64_t e){
+#line 112 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+{
+#line 113 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__asm("  xor.b64 %0, %0, %1;" : "+l" (a) : "l" (b));
+#line 114 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__asm("  xor.b64 %0, %0, %1;" : "+l" (a) : "l" (c));
+#line 115 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__asm("  xor.b64 %0, %0, %1;" : "+l" (a) : "l" (d));
+#line 116 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__asm("  xor.b64 %0, %0, %1;" : "+l" (a) : "l" (e));
+#line 117 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+return a;
+#line 118 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+}}
+#line 122 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+___device__(static  __no_sc__) __forceinline__ uint64_t _Z10ROTLfrom32yj(
+#line 122 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint64_t rtdby32, 
+#line 122 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint32_t magnitude){
+#line 123 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+{
+#line 124 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__asm("{    .reg .b32 hi, lo, scr, mag;           mov.b64 {lo,hi}, %0;                  mov.b32 mag, %1;                      shf.l.wra" "p.b32 scr, lo, hi, mag;      shf.l.wrap.b32 lo, hi, lo, mag;       mov.b64 %0, {scr,lo};             }" : "+l" (rtdby32) : "r" (magnitude));
+#line 133 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+return rtdby32;
+#line 134 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+}}
+#line 138 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+___device__(static  __no_sc__) __forceinline__ uint64_t _Z10ROTRfrom32yj(
+#line 138 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint64_t rtdby32, 
+#line 138 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint32_t magnitude){
+#line 139 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+{
+#line 140 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__asm("{    .reg .b32 hi, lo, scr, mag;           mov.b64 {lo,hi}, %0;                  mov.b32 mag, %1;                      shf.r.wra" "p.b32 scr, hi, lo, mag;      shf.r.wrap.b32 lo, lo, hi, mag;       mov.b64 %0, {scr,lo};             }" : "+l" (rtdby32) : "r" (magnitude));
+#line 149 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+return rtdby32;
+#line 150 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+}}
+#line 153 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+___device__(static  __no_sc__) __forceinline__ uint64_t _Z8ROTLby16y(
+#line 153 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint64_t input){
+#line 154 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+{
+#line 155 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__asm("{   .reg .b32 hi, lo, scr;   mov.b64 {hi,lo}, %0;   prmt.b32 scr, hi, lo, 0x5432;   prmt.b32 lo, hi, lo, 0x1076;   mov.b64 %0, {" "lo,scr}; }" : "+l" (input) :);
+#line 162 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+return input;
+#line 163 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+}}
+#line 167 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+___device__(static  __no_sc__) __forceinline__ uint64_t _Z7ROTLby8y(
+#line 167 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint64_t input){
+#line 168 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+{
+#line 169 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__asm("{.reg .b32 hi, lo, scr;mov.b64 {hi,lo}, %0;prmt.b32 scr, hi, lo, 0x2107;prmt.b32 lo, hi, lo, 0x6543;mov.b64 %0, {scr,lo};}" : "+l" (input) :);
+#line 177 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+return input;
+#line 178 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+}}
+#line 181 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+___device__(static  __no_sc__) __forceinline__ uint64_t _Z7ROTRby8y(
+#line 181 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint64_t input){
+#line 182 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+{
+#line 183 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__asm("{.reg .b32 hi, lo, scr;mov.b64 {hi,lo}, %0;prmt.b32 scr, lo, hi, 0x0765;prmt.b32 lo, lo, hi, 0x4321;mov.b64 %0, {scr,lo};}" : "+l" (input) :);
+#line 191 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+return input;
+#line 192 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+}}
+#line 197 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+___device__(static  __no_sc__) __forceinline__ uint64_t _Z7ROTLby1y(
+#line 197 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint64_t input){
+#line 198 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+{
+#line 199 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__asm("{.reg .b32 hi, lo, scr;mov.b64 {hi,lo}, %0;shf.l.wrap.b32 scr, lo, hi, 1;shf.l.wrap.b32 lo, hi, lo, 1;mov.b64 %0, {scr,lo};}" : "+l" (input) :);
+#line 206 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+return input;
+#line 207 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+}}
+#line 211 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+___device__(static  __no_sc__) __forceinline__ uint64_t _Z7ROTRby1y(
+#line 211 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint64_t input){
+#line 212 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+{
+#line 213 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__asm("{.reg .b32 hi, lo, scr;mov.b64 {hi,lo}, %0;shf.r.wrap.b32 scr, hi, lo, 1;shf.r.wrap.b32 lo, lo, hi, 1;mov.b64 %0, {scr,lo};}" : "+l" (input) :);
+#line 220 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+return input;
+#line 221 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+}}
+#line 224 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+___device__(static  __no_sc__) __forceinline__ uint64_t _Z4xor3yyy(
+#line 224 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint64_t a, 
+#line 224 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint64_t b, 
+#line 224 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint64_t c){
+#line 225 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+{
+#line 226 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+ uint64_t __cuda_local_var_477844_12_non_const_output;
+#line 226 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_477844_12_non_const_output = 0ULL;
+#line 227 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__asm("{  xor.b64 %0, %1, %2;  xor.b64 %0, %0, %3;}" : "+l" (__cuda_local_var_477844_12_non_const_output) : "l" (a), "l" (b), "l" (c));
+#line 231 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+return __cuda_local_var_477844_12_non_const_output;
+#line 232 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+}}
+#line 236 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+___device__(static  __no_sc__) __forceinline__ uint64_t _Z9lop3_0xD2yyy(
+#line 236 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint64_t a, 
+#line 236 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint64_t b, 
+#line 236 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint64_t c){
+#line 237 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+{
+#line 239 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__asm("{  .reg .b32 ah, al, bh, bl, ch, cl;  mov.b64 {ah,al}, %0;  mov.b64 {bh,bl}, %1;  mov.b64 {ch,cl}, %2;  lop3.b32 ah, ah, bh, ch," " 0xD2;  lop3.b32 al, al, bl, cl, 0xD2;  mov.b64 %0, {ah,al};}" : "+l" (a) : "l" (b), "l" (c));
+#line 249 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+return a;
+#line 253 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+}}
+#line 256 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+___device__(static  __no_sc__) __nv_bool _Z6keccakyjPyPb(
+#line 256 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint64_t nonce, 
+#line 256 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint32_t thread, 
+#line 256 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint64_t *i_mid, 
+#line 256 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__nv_bool *optimizations){
+#line 257 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+{
+#line 258 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+ uint64_t __cuda_local_var_477876_12_non_const_state[25];
+#line 258 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+ uint64_t __cuda_local_var_477876_23_non_const_C[5];
+#line 258 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+ uint64_t __cuda_local_var_477876_29_non_const_D[5];
+#line 258 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+ uint64_t __cuda_local_var_477876_35_non_const_scratch;
+#line 262 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+ uint64_t __cuda_local_var_477880_11_non_const_RClocal[24];
+#line 280 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+ struct uint2 *__cuda_local_var_477898_10_non_const_stateVec;
+#line 262 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+memset((char *)&__cuda_local_var_477880_11_non_const_RClocal, 0,sizeof(__cuda_local_var_477880_11_non_const_RClocal));
+#line 262 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_477880_11_non_const_RClocal[0] = 1ULL;
+#line 262 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_477880_11_non_const_RClocal[1] = 32898ULL;
+#line 262 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_477880_11_non_const_RClocal[2] = 9223372036854808714ULL;
+#line 262 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_477880_11_non_const_RClocal[3] = 9223372039002292224ULL;
+#line 262 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_477880_11_non_const_RClocal[4] = 32907ULL;
+#line 262 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_477880_11_non_const_RClocal[5] = 2147483649ULL;
+#line 262 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_477880_11_non_const_RClocal[6] = 9223372039002292353ULL;
+#line 262 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_477880_11_non_const_RClocal[7] = 9223372036854808585ULL;
+#line 262 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_477880_11_non_const_RClocal[8] = 138ULL;
+#line 262 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_477880_11_non_const_RClocal[9] = 136ULL;
+#line 262 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_477880_11_non_const_RClocal[10] = 2147516425ULL;
+#line 262 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_477880_11_non_const_RClocal[11] = 2147483658ULL;
+#line 262 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_477880_11_non_const_RClocal[12] = 2147516555ULL;
+#line 262 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_477880_11_non_const_RClocal[13] = 9223372036854775947ULL;
+#line 262 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_477880_11_non_const_RClocal[14] = 9223372036854808713ULL;
+#line 262 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_477880_11_non_const_RClocal[15] = 9223372036854808579ULL;
+#line 262 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_477880_11_non_const_RClocal[16] = 9223372036854808578ULL;
+#line 262 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_477880_11_non_const_RClocal[17] = 9223372036854775936ULL;
+#line 262 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_477880_11_non_const_RClocal[18] = 32778ULL;
+#line 262 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_477880_11_non_const_RClocal[19] = 9223372039002259466ULL;
+#line 262 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_477880_11_non_const_RClocal[20] = 9223372039002292353ULL;
+#line 262 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_477880_11_non_const_RClocal[21] = 9223372036854808704ULL;
+#line 262 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_477880_11_non_const_RClocal[22] = 2147483649ULL;
+#line 262 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_477880_11_non_const_RClocal[23] = 9223372039002292232ULL;
+#line 280 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_477898_10_non_const_stateVec = ((struct uint2 *)(&__cuda_local_var_477876_12_non_const_state));
+#line 285 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_23_non_const_C)[0]) = ((i_mid[2]) ^ (_Z9ROTR64asmyj(nonce, 20U)));
+#line 286 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_23_non_const_C)[1]) = ((i_mid[4]) ^ (_Z9ROTL64asmyj(nonce, 14U)));
+#line 288 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[0]) = (_Z9lop3_0xD2yyy((i_mid[0]), (i_mid[1]), ((__cuda_local_var_477876_23_non_const_C)[0])));
+#line 293 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[0]) = (((__cuda_local_var_477876_12_non_const_state)[0]) ^ 1ULL);
+#line 296 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[1]) = (_Z9lop3_0xD2yyy((i_mid[1]), ((__cuda_local_var_477876_23_non_const_C)[0]), (i_mid[3])));
+#line 297 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[2]) = (_Z9lop3_0xD2yyy(((__cuda_local_var_477876_23_non_const_C)[0]), (i_mid[3]), ((__cuda_local_var_477876_23_non_const_C)[1])));
+#line 298 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[3]) = (_Z9lop3_0xD2yyy((i_mid[3]), ((__cuda_local_var_477876_23_non_const_C)[1]), (i_mid[0])));
+#line 299 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[4]) = (_Z9lop3_0xD2yyy(((__cuda_local_var_477876_23_non_const_C)[1]), (i_mid[0]), (i_mid[1])));
+#line 301 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_23_non_const_C)[0]) = ((i_mid[6]) ^ (_Z9ROTL64asmyj(nonce, 20U)));
+#line 302 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_23_non_const_C)[1]) = ((i_mid[9]) ^ ((nonce >> 2) ^ (nonce << 62)));
+#line 303 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[5]) = (_Z9lop3_0xD2yyy((i_mid[5]), ((__cuda_local_var_477876_23_non_const_C)[0]), (i_mid[7])));
+#line 304 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[6]) = (_Z9lop3_0xD2yyy(((__cuda_local_var_477876_23_non_const_C)[0]), (i_mid[7]), (i_mid[8])));
+#line 305 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[7]) = (_Z9lop3_0xD2yyy((i_mid[7]), (i_mid[8]), ((__cuda_local_var_477876_23_non_const_C)[1])));
+#line 306 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[8]) = (_Z9lop3_0xD2yyy((i_mid[8]), ((__cuda_local_var_477876_23_non_const_C)[1]), (i_mid[5])));
+#line 307 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[9]) = (_Z9lop3_0xD2yyy(((__cuda_local_var_477876_23_non_const_C)[1]), (i_mid[5]), ((__cuda_local_var_477876_23_non_const_C)[0])));
+#line 310 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_477876_35_non_const_scratch = (nonce * 128ULL);
+#line 311 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_23_non_const_C)[0]) = ((i_mid[11]) ^ __cuda_local_var_477876_35_non_const_scratch);
+#line 312 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_23_non_const_C)[1]) = ((i_mid[13]) ^ (__cuda_local_var_477876_35_non_const_scratch * 2ULL));
+#line 313 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[10]) = (_Z9lop3_0xD2yyy((i_mid[10]), ((__cuda_local_var_477876_23_non_const_C)[0]), (i_mid[12])));
+#line 314 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[11]) = (_Z9lop3_0xD2yyy(((__cuda_local_var_477876_23_non_const_C)[0]), (i_mid[12]), ((__cuda_local_var_477876_23_non_const_C)[1])));
+#line 315 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[12]) = (_Z9lop3_0xD2yyy((i_mid[12]), ((__cuda_local_var_477876_23_non_const_C)[1]), (i_mid[14])));
+#line 316 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[13]) = (_Z9lop3_0xD2yyy(((__cuda_local_var_477876_23_non_const_C)[1]), (i_mid[14]), (i_mid[10])));
+#line 317 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[14]) = (_Z9lop3_0xD2yyy((i_mid[14]), (i_mid[10]), ((__cuda_local_var_477876_23_non_const_C)[0])));
+#line 319 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_23_non_const_C)[0]) = ((i_mid[15]) ^ (_Z9ROTL64asmyj(nonce, 27U)));
+#line 320 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_23_non_const_C)[1]) = ((i_mid[18]) ^ (_Z8ROTLby16y(nonce)));
+#line 321 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[15]) = (_Z9lop3_0xD2yyy(((__cuda_local_var_477876_23_non_const_C)[0]), (i_mid[16]), (i_mid[17])));
+#line 322 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[16]) = (_Z9lop3_0xD2yyy((i_mid[16]), (i_mid[17]), ((__cuda_local_var_477876_23_non_const_C)[1])));
+#line 323 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[17]) = (_Z9lop3_0xD2yyy((i_mid[17]), ((__cuda_local_var_477876_23_non_const_C)[1]), (i_mid[19])));
+#line 324 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[18]) = (_Z9lop3_0xD2yyy(((__cuda_local_var_477876_23_non_const_C)[1]), (i_mid[19]), ((__cuda_local_var_477876_23_non_const_C)[0])));
+#line 325 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[19]) = (_Z9lop3_0xD2yyy((i_mid[19]), ((__cuda_local_var_477876_23_non_const_C)[0]), (i_mid[16])));
+#line 327 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_23_non_const_C)[0]) = ((i_mid[20]) ^ (_Z7ROTRby1y(nonce)));
+#line 328 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_23_non_const_C)[1]) = ((i_mid[21]) ^ ((nonce >> 9) ^ (nonce << 55)));
+#line 329 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_23_non_const_C)[2]) = ((i_mid[22]) ^ ((nonce >> 25) ^ (nonce << 39)));
+#line 330 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[20]) = (_Z9lop3_0xD2yyy(((__cuda_local_var_477876_23_non_const_C)[0]), ((__cuda_local_var_477876_23_non_const_C)[1]), ((__cuda_local_var_477876_23_non_const_C)[2])));
+#line 331 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[21]) = (_Z9lop3_0xD2yyy(((__cuda_local_var_477876_23_non_const_C)[1]), ((__cuda_local_var_477876_23_non_const_C)[2]), (i_mid[23])));
+#line 332 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[22]) = (_Z9lop3_0xD2yyy(((__cuda_local_var_477876_23_non_const_C)[2]), (i_mid[23]), (i_mid[24])));
+#line 333 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[23]) = (_Z9lop3_0xD2yyy((i_mid[23]), (i_mid[24]), ((__cuda_local_var_477876_23_non_const_C)[0])));
+#line 334 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[24]) = (_Z9lop3_0xD2yyy((i_mid[24]), ((__cuda_local_var_477876_23_non_const_C)[0]), ((__cuda_local_var_477876_23_non_const_C)[1])));
+#line 340 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+{
+#line 340 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+ int32_t i;
+#line 340 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+i = 1;
+#line 340 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+
+#pragma unroll 2147483647
+for (; (i < 23); ++i)
+#line 341 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+{
+#line 343 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+{
+#line 343 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+ uint32_t x;
+#line 343 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+x = 0U;
+#line 343 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+for (; (x < 5U); ++x)
+#line 344 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+{
+#line 345 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_23_non_const_C)[((x + 6U) % 5U)]) = (_Z4xor5yyyyy(((__cuda_local_var_477876_12_non_const_state)[x]), ((__cuda_local_var_477876_12_non_const_state)[(x + 5U)]), ((__cuda_local_var_477876_12_non_const_state)[(x + 10U)]), ((__cuda_local_var_477876_12_non_const_state)[(x + 15U)]), ((__cuda_local_var_477876_12_non_const_state)[(x + 20U)])));
+#line 346 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+} }
+#line 349 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+{
+#line 349 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+ uint32_t x;
+#line 349 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+x = 0U;
+#line 349 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+for (; (x < 5U); ++x)
+#line 350 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+{
+#line 351 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_29_non_const_D)[x]) = ((((__cuda_local_var_477876_23_non_const_C)[((x + 2U) % 5U)]) << 1) ^ (((__cuda_local_var_477876_23_non_const_C)[((x + 2U) % 5U)]) >> 63));
+#line 352 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[x]) = (_Z4xor3yyy(((__cuda_local_var_477876_12_non_const_state)[x]), ((__cuda_local_var_477876_29_non_const_D)[x]), ((__cuda_local_var_477876_23_non_const_C)[x])));
+#line 353 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[(x + 5U)]) = (_Z4xor3yyy(((__cuda_local_var_477876_12_non_const_state)[(x + 5U)]), ((__cuda_local_var_477876_29_non_const_D)[x]), ((__cuda_local_var_477876_23_non_const_C)[x])));
+#line 354 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[(x + 10U)]) = (_Z4xor3yyy(((__cuda_local_var_477876_12_non_const_state)[(x + 10U)]), ((__cuda_local_var_477876_29_non_const_D)[x]), ((__cuda_local_var_477876_23_non_const_C)[x])));
+#line 355 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[(x + 15U)]) = (_Z4xor3yyy(((__cuda_local_var_477876_12_non_const_state)[(x + 15U)]), ((__cuda_local_var_477876_29_non_const_D)[x]), ((__cuda_local_var_477876_23_non_const_C)[x])));
+#line 356 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[(x + 20U)]) = (_Z4xor3yyy(((__cuda_local_var_477876_12_non_const_state)[(x + 20U)]), ((__cuda_local_var_477876_29_non_const_D)[x]), ((__cuda_local_var_477876_23_non_const_C)[x])));
+#line 357 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+} }
+#line 371 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_23_non_const_C)[0]) = ((__cuda_local_var_477876_12_non_const_state)[1]);
+#line 372 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[1]) = (_Z9ROTR64asmyj(((__cuda_local_var_477876_12_non_const_state)[6]), 20U));
+#line 373 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[6]) = (_Z9ROTL64asmyj(((__cuda_local_var_477876_12_non_const_state)[9]), 20U));
+#line 374 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[9]) = ((((__cuda_local_var_477876_12_non_const_state)[22]) >> 3) ^ (((__cuda_local_var_477876_12_non_const_state)[22]) << 61));
+#line 375 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[22]) = (_Z9ROTR64asmyj(((__cuda_local_var_477876_12_non_const_state)[14]), 25U));
+#line 376 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[14]) = (_Z9ROTL64asmyj(((__cuda_local_var_477876_12_non_const_state)[20]), 18U));
+#line 377 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[20]) = ((((__cuda_local_var_477876_12_non_const_state)[2]) >> 2) ^ (((__cuda_local_var_477876_12_non_const_state)[2]) << 62));
+#line 378 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[2]) = (_Z9ROTR64asmyj(((__cuda_local_var_477876_12_non_const_state)[12]), 21U));
+#line 379 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[12]) = (_Z9ROTL64asmyj(((__cuda_local_var_477876_12_non_const_state)[13]), 25U));
+#line 380 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[13]) = (_Z7ROTLby8y(((__cuda_local_var_477876_12_non_const_state)[19])));
+#line 381 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[19]) = (_Z7ROTRby8y(((__cuda_local_var_477876_12_non_const_state)[23])));
+#line 382 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[23]) = (_Z9ROTR64asmyj(((__cuda_local_var_477876_12_non_const_state)[15]), 23U));
+#line 386 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[15]) = (_Z10ROTRfrom32yj(((__cuda_local_var_477876_12_non_const_state)[4]), 5U));
+#line 397 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[4]) = (_Z9ROTL64asmyj(((__cuda_local_var_477876_12_non_const_state)[24]), 14U));
+#line 398 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[24]) = ((((__cuda_local_var_477876_12_non_const_state)[21]) << 2) ^ (((__cuda_local_var_477876_12_non_const_state)[21]) >> 62));
+#line 399 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[21]) = ((((__cuda_local_var_477876_12_non_const_state)[8]) >> 9) ^ (((__cuda_local_var_477876_12_non_const_state)[8]) << 55));
+#line 400 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[8]) = (_Z9ROTR64asmyj(((__cuda_local_var_477876_12_non_const_state)[16]), 19U));
+#line 405 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[16]) = (_Z10ROTLfrom32yj(((__cuda_local_var_477876_12_non_const_state)[5]), 4U));
+#line 406 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[5]) = (_Z10ROTRfrom32yj(((__cuda_local_var_477876_12_non_const_state)[3]), 4U));
+#line 414 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[3]) = (_Z9ROTL64asmyj(((__cuda_local_var_477876_12_non_const_state)[18]), 21U));
+#line 415 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[18]) = (_Z9ROTL64asmyj(((__cuda_local_var_477876_12_non_const_state)[17]), 15U));
+#line 416 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[17]) = (_Z9ROTL64asmyj(((__cuda_local_var_477876_12_non_const_state)[11]), 10U));
+#line 417 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[11]) = ((((__cuda_local_var_477876_12_non_const_state)[7]) << 6) ^ (((__cuda_local_var_477876_12_non_const_state)[7]) >> 58));
+#line 418 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[7]) = ((((__cuda_local_var_477876_12_non_const_state)[10]) << 3) ^ (((__cuda_local_var_477876_12_non_const_state)[10]) >> 61));
+#line 419 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[10]) = (_Z7ROTLby1y(((__cuda_local_var_477876_23_non_const_C)[0])));
+#line 422 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+{
+#line 422 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+ uint32_t x;
+#line 422 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+x = 0U;
+#line 422 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+for (; (x < 25U); x += 5U)
+#line 423 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+{
+#line 424 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_23_non_const_C)[0]) = ((__cuda_local_var_477876_12_non_const_state)[x]);
+#line 425 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_23_non_const_C)[1]) = ((__cuda_local_var_477876_12_non_const_state)[(x + 1U)]);
+#line 426 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_23_non_const_C)[2]) = ((__cuda_local_var_477876_12_non_const_state)[(x + 2U)]);
+#line 427 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_23_non_const_C)[3]) = ((__cuda_local_var_477876_12_non_const_state)[(x + 3U)]);
+#line 428 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_23_non_const_C)[4]) = ((__cuda_local_var_477876_12_non_const_state)[(x + 4U)]);
+#line 429 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[x]) = (_Z9lop3_0xD2yyy(((__cuda_local_var_477876_23_non_const_C)[0]), ((__cuda_local_var_477876_23_non_const_C)[1]), ((__cuda_local_var_477876_23_non_const_C)[2])));
+#line 430 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[(x + 1U)]) = (_Z9lop3_0xD2yyy(((__cuda_local_var_477876_23_non_const_C)[1]), ((__cuda_local_var_477876_23_non_const_C)[2]), ((__cuda_local_var_477876_23_non_const_C)[3])));
+#line 431 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[(x + 2U)]) = (_Z9lop3_0xD2yyy(((__cuda_local_var_477876_23_non_const_C)[2]), ((__cuda_local_var_477876_23_non_const_C)[3]), ((__cuda_local_var_477876_23_non_const_C)[4])));
+#line 432 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[(x + 3U)]) = (_Z9lop3_0xD2yyy(((__cuda_local_var_477876_23_non_const_C)[3]), ((__cuda_local_var_477876_23_non_const_C)[4]), ((__cuda_local_var_477876_23_non_const_C)[0])));
+#line 433 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[(x + 4U)]) = (_Z9lop3_0xD2yyy(((__cuda_local_var_477876_23_non_const_C)[4]), ((__cuda_local_var_477876_23_non_const_C)[0]), ((__cuda_local_var_477876_23_non_const_C)[1])));
+#line 434 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+} }
+#line 437 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[0]) = (((__cuda_local_var_477876_12_non_const_state)[0]) ^ ((__cuda_local_var_477880_11_non_const_RClocal)[i]));
+#line 438 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+} }
+#line 440 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+{
+#line 440 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+ uint32_t x;
+#line 440 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+x = 0U;
+#line 440 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+for (; (x < 5U); ++x)
+#line 441 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+{
+#line 442 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_23_non_const_C)[((x + 6U) % 5U)]) = (_Z4xor5yyyyy(((__cuda_local_var_477876_12_non_const_state)[x]), ((__cuda_local_var_477876_12_non_const_state)[(x + 5U)]), ((__cuda_local_var_477876_12_non_const_state)[(x + 10U)]), ((__cuda_local_var_477876_12_non_const_state)[(x + 15U)]), ((__cuda_local_var_477876_12_non_const_state)[(x + 20U)])));
+#line 443 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+} }
+#line 445 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_29_non_const_D)[0]) = (_Z7ROTLby1y(((__cuda_local_var_477876_23_non_const_C)[2])));
+#line 446 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_29_non_const_D)[1]) = (_Z7ROTLby1y(((__cuda_local_var_477876_23_non_const_C)[3])));
+#line 447 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_29_non_const_D)[2]) = (_Z7ROTLby1y(((__cuda_local_var_477876_23_non_const_C)[4])));
+#line 449 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[0]) = (_Z4xor3yyy(((__cuda_local_var_477876_12_non_const_state)[0]), ((__cuda_local_var_477876_29_non_const_D)[0]), ((__cuda_local_var_477876_23_non_const_C)[0])));
+#line 450 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[6]) = (_Z9ROTR64asmyj((_Z4xor3yyy(((__cuda_local_var_477876_12_non_const_state)[6]), ((__cuda_local_var_477876_29_non_const_D)[1]), ((__cuda_local_var_477876_23_non_const_C)[1]))), 20U));
+#line 451 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[12]) = (((_Z4xor3yyy(((__cuda_local_var_477876_12_non_const_state)[12]), ((__cuda_local_var_477876_29_non_const_D)[2]), ((__cuda_local_var_477876_23_non_const_C)[2]))) >> 21) ^ ((_Z4xor3yyy(((__cuda_local_var_477876_12_non_const_state)[12]), ((__cuda_local_var_477876_29_non_const_D)[2]), ((__cuda_local_var_477876_23_non_const_C)[2]))) << 43));
+#line 453 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_477876_12_non_const_state)[0]) = ((_Z9lop3_0xD2yyy(((__cuda_local_var_477876_12_non_const_state)[0]), ((__cuda_local_var_477876_12_non_const_state)[6]), ((__cuda_local_var_477876_12_non_const_state)[12]))) ^ 9223372039002292232ULL);
+#line 455 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+return (__nv_bool)((_Z8bswap_64y(((__cuda_local_var_477876_12_non_const_state)[0]))) <= d_target);
+#line 456 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+}}
+#line 459 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__launch_bounds__(1024U,1) __global__ __var_used__ void _Z8gpu_minePyy(
+#line 459 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint64_t *solution, 
+#line 459 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+uint64_t cnt){
+#line 460 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+{
+#line 461 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+ uint64_t __cuda_local_var_478079_12_non_const_thread;
+#line 462 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+ uint64_t __cuda_local_var_478080_12_non_const_nonce;
+#line 463 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+ uint64_t __cuda_local_var_478081_12_non_const_passingMid[25];
+#line 464 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+ __nv_bool __cuda_local_var_478082_8_non_const_passingOptimizations[8];
+#line 465 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+ uint8_t __cuda_local_var_478083_11_non_const_i;
+#line 461 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_478079_12_non_const_thread = ((uint64_t)(((blockDim.x) * (blockIdx.x)) + (threadIdx.x)));
+#line 462 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+__cuda_local_var_478080_12_non_const_nonce = (cnt + __cuda_local_var_478079_12_non_const_thread);
+#line 468 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+for (__cuda_local_var_478083_11_non_const_i = ((uint8_t)0U); (((int)__cuda_local_var_478083_11_non_const_i) < 8); ++__cuda_local_var_478083_11_non_const_i) {
+#line 469 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_478082_8_non_const_passingOptimizations)[__cuda_local_var_478083_11_non_const_i]) = ((d_HBoptimizations)[__cuda_local_var_478083_11_non_const_i]); }
+#line 472 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+for (__cuda_local_var_478083_11_non_const_i = ((uint8_t)0U); (((int)__cuda_local_var_478083_11_non_const_i) < 25); ++__cuda_local_var_478083_11_non_const_i) {
+#line 473 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+((__cuda_local_var_478081_12_non_const_passingMid)[__cuda_local_var_478083_11_non_const_i]) = ((d_mid)[__cuda_local_var_478083_11_non_const_i]); }
+#line 475 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+if (_Z6keccakyjPyPb(__cuda_local_var_478080_12_non_const_nonce, ((uint32_t)__cuda_local_var_478079_12_non_const_thread), (__cuda_local_var_478081_12_non_const_passingMid), (__cuda_local_var_478082_8_non_const_passingOptimizations)))
+#line 476 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+{
+#line 477 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+(*solution) = __cuda_local_var_478080_12_non_const_nonce;
+#line 478 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+return;
+#line 479 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+} 
+#line 480 "D:\\0xbitcoinminer\\miner\\cpp\\hybridminer\\cuda_sha3.cu"
+}}
+#line 427 "e:\\cuda\\include\\vector_types.h"
+___device__(static  __no_sc__) __inline__ void _ZN4dim3C1Ejjj( struct dim3 *const this, 
+#line 427 "e:\\cuda\\include\\vector_types.h"
+unsigned vx, 
+#line 427 "e:\\cuda\\include\\vector_types.h"
+unsigned vy, 
+#line 427 "e:\\cuda\\include\\vector_types.h"
+unsigned vz){
+#line 427 "e:\\cuda\\include\\vector_types.h"
+{
+#line 427 "e:\\cuda\\include\\vector_types.h"
+(this->x) = vx;
+#line 427 "e:\\cuda\\include\\vector_types.h"
+(this->y) = vy;
+#line 427 "e:\\cuda\\include\\vector_types.h"
+(this->z) = vz; 
+#line 427 "e:\\cuda\\include\\vector_types.h"
+}}
+___device__(static  __no_sc__) __inline__ void _ZN4dim3C2Ejjj( struct dim3 *const this,  unsigned __T0,  unsigned __T1,  unsigned __T2){ {  _ZN4dim3C1Ejjj(this, __T0, __T1, __T2);  }}

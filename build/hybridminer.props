@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(cuda_on_windowsBeforeTargets)' == '' and '$(cuda_on_windowsAfterTargets)' == '' and '$(ConfigurationType)' != 'Makefile'">
+    <cuda_on_windowsBeforeTargets>Midl</cuda_on_windowsBeforeTargets>
+    <cuda_on_windowsAfterTargets>CustomBuild</cuda_on_windowsAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup>
+    <cuda_on_windowsDependsOn Condition="'$(ConfigurationType)' != 'Makefile'">_SelectedFiles;$(cuda_on_windowsDependsOn)</cuda_on_windowsDependsOn>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <cuda_on_windows>
+      <CommandLineTemplate>call nvcc -c &quot;%(Identity)&quot; -o &quot;$(IntDir)%(Filename).o&quot;                        -cudart static -m64 -lineinfo -use_fast_math -O3 --keep --resource-usage -src-in-ptx  -Xptxas &quot;-v --opt-level 3 --sp-bounds-check --warn-on-spills --warn-on-local-memory-usage --dont-merge-basicblocks&quot;  &quot;-gencode=arch=compute_61,code=\&quot;sm_61,compute_61\&quot;&quot; &quot;-gencode=arch=compute_52,code=\&quot;sm_52,compute_52\&quot;&quot;</CommandLineTemplate>
+      <Outputs>$(IntDir)%(Filename).o</Outputs>
+      <ExecutionDescription>compile cuda file on windows</ExecutionDescription>
+      <AdditionalDependencies>%(Identity)</AdditionalDependencies>
+    </cuda_on_windows>
+  </ItemDefinitionGroup>
+</Project>
